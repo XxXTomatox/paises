@@ -8,7 +8,7 @@
 
     if ($respuesta) {
         header('location:../index.php');
-    }else {
+    }else{
         echo "No se pudo Elininar";
     }
 ?>
