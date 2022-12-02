@@ -1,5 +1,5 @@
 <?php 
-    include "../conexion.php";
+    include "..//conexion.php";
     $conexion = conexion();
     $id = $_GET['idp'];
     
