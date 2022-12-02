@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-12-2022 a las 03:31:35
+-- Tiempo de generación: 02-12-2022 a las 03:54:29
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.1.12
 
@@ -30,8 +30,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `paises` (
   `id` int(11) NOT NULL,
   `nombre` varchar(200) NOT NULL,
-  `continente` int(11) NOT NULL,
-  `bandera` longblob DEFAULT NULL
+  `continente` varchar(200) NOT NULL,
+  `bandera` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -39,8 +39,9 @@ CREATE TABLE `paises` (
 --
 
 INSERT INTO `paises` (`id`, `nombre`, `continente`, `bandera`) VALUES
-(1, '', 0, ''),
-(2, 'mexico', 0, '');
+(7, 'España', 'Europa', 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png'),
+(15, 'mexico', 'America', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1200px-Flag_of_Mexico.svg.png'),
+(16, 'Japon', 'Asia', 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg');
 
 --
 -- Índices para tablas volcadas
@@ -60,7 +61,7 @@ ALTER TABLE `paises`
 -- AUTO_INCREMENT de la tabla `paises`
 --
 ALTER TABLE `paises`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
