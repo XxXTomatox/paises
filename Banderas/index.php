@@ -29,7 +29,7 @@
                 <th><?php echo $ver['continente']; ?></th>
                 <th><img src="<?php echo $ver['bandera']; ?>" class="img-thumbnail" alt=""></th>
                 <td>
-                <a class="btn btn-primary" href="./editar.php?idp=<?php echo $ver['id']; ?>" role="button">actualizar</a>
+                <a class="btn btn-primary" href="./actualizar.php?idp=<?php echo $ver['id']; ?>" role="button">actualizar</a>
               <th>
               <a class="btn btn-primary" href="./backend/eliminar.php?idp=<?php echo $ver['id']; ?>" role="button">eliminar</a>
             </tr>

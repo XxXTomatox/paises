@@ -4,7 +4,7 @@
         $usuario = 'root'; // por defecto es root
         $password = '';//por defecto no tiene password
         $base = 'paises';
-        $puerto= 3306;
+        $puerto= 8888;
 
     $conexion = mysqli_connect(
             $servidor,
